@@ -19,7 +19,7 @@
         <!-- Animate CSS -->
         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <script src="Javascript/swapWaveImg.js"></script>
-        <!-- COUNTDOWN FUNCTION JAVASCRIPT BY SANJANA -->
+        <!-- COUNTDOWN FUNCTION JAVASCRIPT BY -->
         <script src = "Javascript/countdown_sales.js"></script>
     </head>
 
