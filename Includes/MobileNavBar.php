@@ -9,7 +9,7 @@
             <i class="fas fa-bars animate__animated animate__backInDown"></i>
         </label>
 
-        <h1 class="business-name"><a href="index.html" class="animate__animated animate__backInDown">7th Heaven</a></h1>
+        <h1 class="business-name"><a href="index.html" class="animate__animated animate__backInDown">PATISSERIE</a></h1>
 
         <ul>
             <li><a href="index.php" class="<?php if($page == 'index'){echo 'active';}?>" href="index.php">HOME</a></li>

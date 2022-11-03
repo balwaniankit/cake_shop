@@ -7,6 +7,7 @@
     include "connection.php";
 
     $uname = $fname = $lname = $email = $password= "";
+    $verify = 1;
     $passwordCriteria = "";
     $fnameCriteria = "";
     $lnameCriteria = "";
@@ -88,7 +89,7 @@
             }
             else
             {
-                // check if username already in database
+                // check if email already in database
                 $sql = "SELECT * FROM user WHERE email='$email'";
 
                 $result = mysqli_query($conn, $sql);
@@ -138,25 +139,25 @@
 
         if($responseKey['success'])
         {
-            if($unameOK == true && $passwordOK == true && $fnameOK == true && $lnameOK == true && $emailOK == true)
+            if($unameOK == true && $passwordOK == true && $fnameOK == true && $lnameOK == true && $emailOK == true && $verify = 1)
             {
                 //Generate VKey
                 $vkey = md5(time().$uname);
 
                 $passHash = password_hash($password, PASSWORD_BCRYPT);
 
-                $sql = "INSERT INTO user (uname, pass, fname, lname, email, vkey)
-                VALUES ('$uname', '$passHash', '$fname', '$lname', '$email', '$vkey')";
+                $sql = "INSERT INTO user (uname, pass, fname, lname, email, vkey, verified)
+                VALUES ('$uname', '$passHash', '$fname', '$lname', '$email', '$vkey', '$verify')";
 
                 if(mysqli_query($conn, $sql)){
                     //send mail
                     $to = $email;
                     $subject = "Email Verification";
                     $message = "<a href='http://localhost/MyFiles/CakeShop/verifyEmail.php?vkey=$vkey'>Register Account</a>";
-                    $headers = "From: malako.cakeshop@gmail.com \r\n";
+                    $headers = "From: cakeshop@gmail.com \r\n";
                     $headers .= "MIME-Version: 1.0" . "\r\n";
                     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-									
+
                     mail($to, $subject, $message, $headers);
                     setcookie("thankYouCookie", "verificationEmailSent");
                     header('location: thankYouRegistration.php');

@@ -66,7 +66,7 @@
             } else {
                 $phone = test_input($_POST["phone"]);
 
-                if (!preg_match("/^([0-9]{8}|[0-9]{7})*$/", $phone)) {
+                if (!preg_match("/^([0-9]{10})*$/", $phone)) {
                     $phoneCriteria = "Enter a valid phone number";
                 }
                 else

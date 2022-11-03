@@ -173,37 +173,6 @@
 
                     <br>
                     <hr>
-                    <div class="danger-zone">
-                        <div class="danger-zone-inside">
-                            <div class="change-password-container">
-                                <div class="change-password-subtitle">
-                                    <h3>Delete Account</h3>
-                                    <p><i class="fas fa-exclamation-triangle"></i>&nbsp&nbspWarning: Your account will be <b>permanently deleted</b>. Please be certain.</p>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <span class="input-error"><?php echo $delPasswordCriteria;?></span>
-                                <label class="col-md-4 control-label" for="Current Password ">Password </label>
-                                <div class="col-md-4">
-                                    <div class="input-group">
-                                        <div class="input-group-addon">
-                                            <i class="fas fa-unlock-alt"></i>
-                                        </div>
-                                        <input type="password" id="Current Password " name="delPassword" type="text" placeholder="Confirm Your Password" class="form-control input-md">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" ></label>  
-                                <div class="col-md-4">
-                                    <button name="deleteAccount" class="btn btn-danger"><span class="glyphicon glyphicon-remove-sign"></span> Delete Account</button>
-                                    <span class=message"><?php echo "&nbsp&nbsp <b>$passwordMessage</b>";?></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </fieldset>
             </form>
         </div> 

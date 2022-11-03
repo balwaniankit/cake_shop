@@ -42,7 +42,7 @@ if(filter_input(INPUT_GET, 'action') == 'delete'){
     <title>PATISSERIE | Details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--========== PHP CONNECTION TO DATABASE: MALAKO ==========-->
+    <!--========== PHP CONNECTION TO DATABASE ==========-->
     <?php 
         
         include_once 'numOfItemsInCart.php';

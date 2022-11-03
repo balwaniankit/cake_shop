@@ -21,7 +21,7 @@
             }
             else {
                 $captcha = $_POST["g-recaptcha-response"];
-                $secretkey = "6LdT9A0aAAAAAPb_m1z6qx8ryZzlAhr8xRTk-uP3";
+                $secretkey = "6LeAp9YiAAAAAAZWtDie37R6BtlaP8Tf9NDwYkDt";
                 $url = 'https://www.google.com/recaptcha/api/siteverify?secret='.urldecode($secretkey).'&response='.urldecode($captcha).'';
                 $response = file_get_contents($url);
                 $responseKey = json_decode($response, TRUE);
@@ -55,7 +55,7 @@
                         $to = $row['email'];
                         $subject = "Reset Password";
                         $message = "Username: <b>$uname</b><br>Password: <b>$newPassword</b><br><br><b>Please reset your password after you login.</b>";
-                        $headers = "From: malako.cakeshop@gmail.com \r\n";
+                        $headers = "From: nktbalwani@gmail.com \r\n";
                         $headers .= "MIME-Version: 1.0" . "\r\n";
                         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 

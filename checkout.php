@@ -73,7 +73,7 @@
         //REGEX BY CARD TYPE
         $cardtype = array(
           "visa"       => "/^4[0-9]{15}$/",
-          // "mastercard" => "/^5[1-5][0-9]{14}$/"
+          //"mastercard" => "/^5[1-5][0-9]{14}$/"
          
         );
 
@@ -106,7 +106,7 @@
             //VALIDATES MONTH
             if((int)$ccexp_m > 0 && (int)$ccexp_m < 13){
               //VALIDATES YEAR
-              if((int)$ccexp_y > 1900 && (int)$ccexp_y < 4000){
+              if((int)$ccexp_y > 2021 && (int)$ccexp_y < 4000){
                 $expired_check = \DateTime::createFromFormat('my', $ccexp_m.$ccexp_y);
                 $month_now = date('m');
                 $year_now = date('y');

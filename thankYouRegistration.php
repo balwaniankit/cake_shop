@@ -47,9 +47,9 @@
 
                 <div class="mail-sent-text">
                     <h1>Thank you for joining!</h1>
-                    <span class="message">A verification mail has been sent to you email account. Please check your inbox to verify.</span>
+                    <span class="message">Kindly login again!</span>
+                    <p><a href="login.php">Login</a></p>
                     <br><br>
-                    <span class="tip">Tip: If you have not received the email, please check your Spam or Trash folder.</span>
                 </div>
             </div>
         </div>

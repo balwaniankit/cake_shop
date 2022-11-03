@@ -2,7 +2,6 @@
 //<!--========== PHP CONNECTION TO DATABASE ==========-->
     $host = "localhost";
     $username = "root";
-    // $pass = "malako123";
     $pass = "";
 
     $dbname = "cakeshop";

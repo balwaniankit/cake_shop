@@ -79,10 +79,7 @@
                     <span class="term-of-use"><b><a href=#>TERMS OF USE</a></b></span>
                 </div>
 
-                <div class="copyright">
-                    <span class="copyright-text">&#169; 2020 Design by Atish & Sanjana</span>
-                </div>
-
+                
             </div>  
 
         </footer>

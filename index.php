@@ -87,7 +87,7 @@
             <div class="row">
 
                 <div class="column">
-                    <i class="fas fa-cookie"  style="color: black;"></i>
+                <i class="fas fa-boxes"  style="color: black;"></i>
                     <span class="what-you-can-do-subtitle buy-our-cake">Freshly baked cakes</span>
                     <span class="what-you-can-do-text">Get a taste of our freshly prepared cakes by ordering online!</span>
                 </div>
@@ -118,8 +118,7 @@
                     <div class="subtitle">
                         <h2>SPECIAL OFFER</h2>
                     </div>
-                    <p class="offer-description">Extreme Christmas Sales ends in: </p>
-                    <p class="offer-description" id="countdown" style="font-family: Old Standard TT; font-size: 2rem;">Sales countdown</p>
+                    <p class="offer-description">Get upto 20% off on selected products </p>
 
                     <div class="subscribe-button-container">
                         <a href="products.php"><button class="subscribe-button" name="subscribe">SHOP NOW</button></a>
