@@ -18,7 +18,7 @@
 
     <!--========== CSS FILE ==========-->
     <link rel="stylesheet" type="text/css" href="Common.css">
-    <link rel='stylesheet' type='text/css' href='Sanjana.css' />
+    <link rel='stylesheet' type='text/css' href='styles.css' />
 
     <!--========== BOOTSTRAP ==========-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -170,7 +170,7 @@
             <div class="offer__bg">
                 <div class="offer__data">
                     <h2 class="offer__title">Special Offer</h2>
-                    <p class="offer__description">Extreme Christmas Sales this month only!</p>
+                    <p class="offer__description">Get upto 20% off on selected products</p>
 
                     <a href="#" class="button button__round">SHOP NOW</a>
                 </div>

@@ -50,7 +50,7 @@ if(filter_input(INPUT_GET, 'action') == 'delete'){
 
     <!--========== CSS FILES ==========-->
     <link rel="stylesheet" type="text/css" href="Common.css">
-    <link rel="stylesheet" type="text/css" href="Sanjana.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
     <link href="jquery.nice-number.css" rel="stylesheet">
     <!--========== JQUERY CDN ==========-->

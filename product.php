@@ -150,7 +150,7 @@ function pre_r($array){
 
     <!--========== CSS FILES ==========-->
     <link rel="stylesheet" type="text/css" href="Common.css">
-    <link rel="stylesheet" type="text/css" href="Sanjana.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="jquery.nice-number.css" rel="stylesheet">
     <!--========== JQUERY CDN ==========-->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
