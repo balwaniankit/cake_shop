@@ -251,7 +251,7 @@ function pre_r($array){
         <div class="container mx-auto mt-0 pt-0 ">
             <!-- <form method="POST" action="index.php?action=add&id=<?php //echo $product_id; ?>"> -->
                 <div class="row continue-shop-div text-center">
-                    <a href="products.php" class="button continue" id="cat-but" >Continue</a>
+                    <a href="products.php" class="button continue" id="cat-but" >Back</a>
                     <!-- <button class="dropbtn button" id="cat-but"></button> -->
                 </div>
                 <div class="row">
@@ -296,7 +296,7 @@ function pre_r($array){
             <!-- </form> -->
 
         </div>
-
+        <?php include './Includes/MobileBottomNav.php';?>
         <!-- <script src="Javascript\main.js?<?php //echo filemtime('Javascript\main.js'); ?>" ></script> -->
     </body>
 </html>

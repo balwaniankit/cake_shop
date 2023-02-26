@@ -37,9 +37,6 @@
            while($row = mysqli_fetch_assoc($result)){
                $product_id = $row['productID'];
 
-               
-               
-
             echo' <div class="featured__products" id="product__card">
                        <div class="featured__box">
                            <div class="featured__new">NEW</div>
@@ -89,9 +86,6 @@
             }
            
         }
-
-   
-
 
 ?>
 

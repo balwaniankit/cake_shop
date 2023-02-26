@@ -1,0 +1,22 @@
+{
+    "name":"Patisserie",
+    "short_name":"Patisserie",
+    "start_url":"http://localhost/cake_shop/index.php",
+    "display":"standalone",
+    "background_color":"#5900b3",
+    "theme_color":"black",
+    "scope": ".",
+    "description":"This is a PWA tutorial.",
+    "icons":[
+    {
+    "src":"icons/logo.png",
+    "sizes":"189x189",
+    "type":"image/png"
+    },
+    {
+    "src":"icons/bake.png",
+    "sizes":"189x189",
+    "type":"image/png"
+    }
+    ]
+    }

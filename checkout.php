@@ -69,6 +69,7 @@
       
         //PAYMENT METHOD VALIDATION
         $paymentMethod = test_input($_POST["paymentMethod"]);
+      
 
         //REGEX BY CARD TYPE
         $cardtype = array(
@@ -331,9 +332,9 @@
 
               <!-- CHOOSE COUNTRY  -->
               <div class="col-md-5">
-                <label for="country" class="form-label">Country</label>
+                <label for="country" class="form-label">State</label>
                 <select class="form-select" name="country" id="country" required>
-                  <option value="Mauritius">India</option>
+                  <option value="Mauritius">Maharashtra</option>
                 </select>
                 <!-- <div class="invalid-feedback">
                   Please select a valid country.
@@ -395,17 +396,17 @@
                 <label class="form-check-label" for="credit">Credit card</label>
               </div>
 
-              <!-- MCB JUICE  -->
+              <!-- MCB JUICE  
               <div class="form-check">
-                <input id="mcbjuice" name="paymentMethod" type="radio" class="form-check-input" value="JuiceByMCB" <?php if ($paymentMethod == "JuiceByMCB"){ echo "checked";} ?> >
-                <label class="form-check-label" for="mcbjuice">Juice by MCB</label>
+                <input id="mcbjuice" name="paymentMethod" type="radio" class="form-check-input" value="JuiceByMCB" <?php if ($paymentMethod == "COD"){ echo "checked";} ?> >
+                <label class="form-check-label" for="mcbjuice">COD</label>
               </div>
 
-              <!-- PAYPAL  -->
+               PAYPAL  
               <div class="form-check">
                 <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" value="paypal" <?php if ($paymentMethod == "paypal"){ echo "checked";} ?> >
                 <label class="form-check-label" for="paypal">PayPal</label>
-              </div>
+              </div> -->
 
               <span class="error"><?php echo $paymentMethodErr;?></span>
             </div>
@@ -464,7 +465,7 @@
             </div>
 
 
-            <!-- COTINUE TO CHECKOUT BUTTON  -->
+            <!-- CONTINUE TO CHECKOUT BUTTON  -->
             <hr class="my-4 pinkLine" >
             
             <button class="w-100 btn btn-primary btn-lg button" type="submit">Continue to checkout</button>
@@ -478,7 +479,7 @@
     </main>
 
     <footer class="my-5 pt-5 text-muted text-center text-small">
-      <p class="mb-1">&copy; 2020 PATISSERIE</p>
+      <p class="mb-1">&copy; 2022 PATISSERIE</p>
       <ul class="list-inline">
         <li class="list-inline-item"><a href="#">Privacy</a></li>
         <li class="list-inline-item"><a href="#">Terms</a></li>

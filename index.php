@@ -18,6 +18,14 @@
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <!-- Animate CSS -->
         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <!-- Meta tags for PWA -->
+        <meta name= "apple-mobile-web-app-status-bar" content="#aa7700">
+        <meta name="theme-color" content="black">
+
+        <!-- Manifest File link -->
+        <link rel="manifest" href="manifest.json">
+
         <script src="Javascript/swapWaveImg.js"></script>
         <!-- COUNTDOWN FUNCTION JAVASCRIPT BY -->
         <script src = "Javascript/countdown_sales.js"></script>
@@ -204,6 +212,28 @@
         <!-- Start Bottom Nav -->
         <?php include './Includes/MobileBottomNav.php';?>
         <!-- End Bottom Nav -->
+
+
+        <script>
+        window.addEventListener('load', () => {
+        registerSW();
+        });
+
+        // Register the Service Worker
+        async function registerSW() {
+        if ('serviceWorker' in navigator) {
+            try {
+            await navigator
+                    .serviceworker
+                    .register('serviceworker.js');
+            }
+            catch (e) {
+            console.log('SW registration failed');
+            }
+        }
+        }
+        </script>
+
 
     </body>
 </html>
